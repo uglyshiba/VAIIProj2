@@ -1,0 +1,63 @@
+@font-face {
+    font-family: GumballFont;
+    src: url("../resources/fonts/Gumball.ttf") format("truetype");
+}
+
+h1 {
+    text-align: center;
+    font-family: GumballFont, serif;
+    border-width: 1px;
+    border-color: black;
+}
+
+@media screen {
+    body{
+        background-color: #4BC6E3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    border: thick black;
+    padding-top: 0;
+}
+
+.navbar-item{
+    background: #049bbf;
+    flex-grow: 1;
+    text-align: center;
+    font-family: GumballFont, serif;
+    font-size: 200%;
+    border: 2px solid #000;
+    text-decoration: none;
+    color:inherit;
+    padding-top: 0;
+}
+
+header{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background-color: #0468bf;
+    -webkit-text-stroke: 0.2px black;
+}
+
+nav{
+    position:relative;
+}
+
+footer{
+    background-color: #f792ed;
+    border-top: black solid 3px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
